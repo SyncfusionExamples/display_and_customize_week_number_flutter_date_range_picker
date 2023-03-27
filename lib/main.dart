@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 
 void main() => runApp(const WeekNumber());
@@ -18,19 +17,19 @@ class WeekNumberCustomization extends State<WeekNumber> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           body: Card(
-        margin: const EdgeInsets.fromLTRB(50, 150, 50, 150),
-        child: SafeArea(
-          child: SfDateRangePicker(
-            monthViewSettings: const DateRangePickerMonthViewSettings(
-                showWeekNumber: true,
-                weekNumberStyle: DateRangePickerWeekNumberStyle(
-                    textStyle: TextStyle(
-                      color: Colors.amber,
-                    ),
-                    backgroundColor: Color(0xFFDF5E5E))),
-          ),
-        ),
-      )),
+            margin: const EdgeInsets.fromLTRB(50, 150, 50, 150),
+            child: SafeArea(
+              child: SfDateRangePicker(
+                monthViewSettings: const DateRangePickerMonthViewSettings(
+                    showWeekNumber: true,
+                    weekNumberStyle: DateRangePickerWeekNumberStyle(
+                        textStyle: TextStyle(
+                          color: Colors.amber,
+                        ),
+                        backgroundColor: Color(0xFFDF5E5E))),
+              ),
+            ),
+          )),
     );
   }
 }
